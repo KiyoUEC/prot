@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      .footer {background:rgb(10%,50%,50%)}
+    </style>
+    <title>Begistant</title>
+  </head>
+  <body class="d-flex flex-column h-100 vstack">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/Begistant-logos_transparent.png" alt="" width="30">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Manuals</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Our Company</a></li>
+                    <li><a class="dropdown-item" href="#">Our Mission</a></li>
+                    <li><a class="dropdown-item" href="#">Our Philosophy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Join Us</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control ms-2 type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a class="nav-link text-decoration-underline" href="sign-in.html">
+                サインイン
+            </a>
+            または
+            <a class="btn btn-primary ms-2" id="register" href="register.html">新規登録</a>
+          </div>
+        </div>
+    </nav>
+    <main>
+      <section class="bg-info text-black h-" id="home" style="padding: 80px 0 50px">
+        <div class="container py-3">
+          <div class="row align-items-center g-4">
+            <div class="col-md-7">
+              <p class="display-3">No study, No life.</h1>
+              <p class="h5">－人口知能を使った学習アプリで学修効果を最大化－</p>
+              <a href="#register" class="btn btn-primary" px-5 shadow">今すぐ登録</a>
+            </div>
+              <div class="col-md-5 text-center bg-light">
+                <img src="img/img-home.svg" class="img-fluid" alt="image">
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-1" id="spec">
+        <div class="container text-center py-3">
+          <div class="row pb-3">
+            <div class="col">
+              <h1>Begistantの特徴</h1>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card shadow h-100">
+                <img src="img/susan-q-yin-2JIvboGLeho-unsplash.jpg" alt="contents">
+                <div class="card-body">
+                  <h5 class="card-title">豊富なコンテンツ</h5>
+                  <p class="card-text">
+                    あらゆる分野の初学者向け学習コンテンツが１万点以上。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 h-100">
+              <div class="card shadow h-100">
+                <img src="img/markus-spiske-cvBBO4PzWPg-unsplash.jpg" class="img-fluid" alt="search">
+                <div class="card-body">
+                  <h5 class="card-title">リアルタイム字幕表示、単語検索機能</h5>
+                  <p class="card-text">
+                    講義内容は字幕で表示。分からない単語をクリックで検索。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 h-100">
+              <div class="card shadow h-100">
+                <img src="img/lyman-hansel-gerona-TVCDj_fFvx8-unsplash.jpg" class="img-fluid" alt="ai">
+                <div class="card-body">
+                  <h5 class="card-title">AIによる学習サポート</h5>
+                  <p class="card-text">
+                    AIチャットボットに質問すればあなたの疑問も直ちに解消。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-auto px-0 mx-0 py-0 bg-light">
+      <div>
+        <img src="img/Begistant-logos.gif" height="50px">
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
