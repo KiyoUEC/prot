@@ -3,7 +3,7 @@ let tid;
 const msgbox = document.getElementById('msgbox');
 const movie = document.getElementById("movie");
 
-movie.setAttribute("src", "../res/JavaScript.mp4");
+movie.setAttribute("src", "/res/JavaScript.mp4");
 
 movie.addEventListener("playing", function() {
 
