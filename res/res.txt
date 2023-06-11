@@ -1,0 +1,7 @@
+function showMessage(msg, timeout) {
+    const arr = [...String(msg)];
+    let i = 0;
+    arr.forEach((value, index) => {
+        setTimeout(() => {console.log(value)}, timeout * index);
+    });
+}

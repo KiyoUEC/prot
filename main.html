@@ -79,10 +79,11 @@
           <div class="col-md-6 d-flex flex-row">
             <form>
               <div class="col-md-6">
-                <input type="submit" value="ChatGPTに質問">
+                <button id="submit" type="button" class="btn btn-primary" onclick="submitQuestion()">ChatGPTに質問</button>
+                <button id="clear" type="button" class="btn btn-warning" onclick="clearText()">クリア</button>
               </div>
               <div class="col-md-6">
-                <textarea rows="5" cols="80">1秒ごとに文字を表示するJavaScriptプログラムを書いて。
+                <textarea id="que" rows="5" cols="80">1秒ごとに文字を表示するJavaScriptプログラムを書いて。
                 </textarea>
               </div>
             </form>
@@ -92,15 +93,7 @@
               ChatGPTからの回答
             </div>
             <div class="col-md-6">
-              <textarea rows="5" cols="80">
-                function showMessage(msg, timeout) {
-                    const arr = [...String(msg)];
-                    let i = 0;
-                    arr.forEach((value, index) => {
-                        setTimeout(() => {console.log(value)}, timeout * index);
-                    });
-                }
-                showMessage("こんにちわ", 1000);           
+              <textarea id="res" rows="5" cols="80">     
               </textarea>
             </div>
           </div>

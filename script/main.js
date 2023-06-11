@@ -22,6 +22,24 @@ movie.addEventListener("ended", function() {
     num = 0;
 });
 
+function submitQuestion() {
+    const res = document.getElementById("res");
+    res.innerHTML = "showMessage('こんにちわ', 1000);\n\
+        function showMessage(msg, timeout) {\n\
+        const arr = [...String(msg)];\n\
+        let i = 0;\n\
+        arr.forEach((value, index) => {\n\
+            setTimeout(() => {console.log(value)}, timeout * index);\n\
+        });\n\
+    }";
+};
+
+function clearText() {
+    const que = document.getElementById("que");
+    const res = document.getElementById("res");
+    que.innerText="";
+    res.innerText="";
+};
 
 function showMessage(timeout) {
 
